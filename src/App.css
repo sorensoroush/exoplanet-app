@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+p {
+  margin: 0;
+}
+
 #container {
   height: 600px;
   max-width: 60%;
@@ -29,6 +33,16 @@
 }
 
 #orbits {
+}
+
+#planets-canvas {
+  grid-column: 1;
+  grid-row: 2;
+  border: 2px solid #FFAA00;
+}
+
+#sizes {
+  background-color: #FFFF00;
 }
 
 nav {
