@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom'
 
 const NavBar = props => {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/planet-list">List of Planets</Link>
-      <Link to="/random-planet">Random Planet</Link>
-    </nav>
+    <div className="textbg nav">
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/random-planet">Random Planet</Link>
+        <Link to="/about">About</Link>
+      </nav>
+    </div>
   )
 }
 
