@@ -1,0 +1,12 @@
+Stuff to make this a MVP:
+?-Make planet list clickable so that it takes them to that planet's page
+--Compartmentalize
+-Give it a loading message
+-Make welcome page
+--Make a readme
+
+Stuff to make it better:
+--Style it
+--Give earth size when planet is small
+-Include other planets orbits
+-Make a search function
