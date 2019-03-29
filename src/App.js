@@ -10,19 +10,11 @@ import About from './components/About'
 import PlanetList from './components/PlanetList'
 import RandomPlanet from './components/RandomPlanet'
 
-// delete this import when ready to import from api
-import planetData from './data/exoplanetData.json'
-
 class App extends Component {
   state = {
-    // switch lines when ready to import from api
-    planetData,
-    isLoaded: true
-    // planetData: [],
-    // isLoaded: false
+    planetData: [],
+    isLoaded: false
   } 
-
-/*
 
   componentDidMount() {
     fetch('https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&format=JSON&api_key=Kdd4hQF33ZIk6rnDWkIDJY1PxdlnhAQ5lfgQifVX')
@@ -33,8 +25,6 @@ class App extends Component {
         console.log(this.state.planetData)
       })
   }
-
-*/
 
   render() {
     return (

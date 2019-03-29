@@ -5,9 +5,9 @@ const NavBar = props => {
   return (
     <div className="textbg nav">
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/random-planet">Random Planet</Link>
-        <Link to="/about">About</Link>
+        <div className="a"><Link to="/">Home</Link></div>
+        <div className="a"><Link to="/random-planet">Random Planet</Link></div>
+        <div className="a"><Link to="/about">About</Link></div>
       </nav>
     </div>
   )
