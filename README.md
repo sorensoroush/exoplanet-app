@@ -1,70 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Exoplanet App
 
-## Available Scripts
+## What is it?
 
-In the project directory, you can run:
+The Exoplanet Planetarium is a React app that fetches data from NASA's exoplanet archive and dynamically displays the data of various exoplanets. The data is displayed on HTML canvases, and it includes: planet orbit radius and eccentricity, planet mass and radius (relative to Jupiter), distance of the system to ours, and host star brightness, temperature, mass, and radius (relative to the Sun).
 
-### `npm start`
+## Wireframes
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Wireframe](https://imgur.com/Lu7Cjnl)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+I had a general idea of how I wanted to lay out the information, but I changed the lower-right section to something that displayed information more meaningful than just the distance to our system. I ended up adding host star information as well because the archive contains a good amount of information about them.
 
-### `npm test`
+### MVP EXAMPLE
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Find and use external api
+- Render data on page
+- Randomize planet and therefore randomize rendered data
+- Navigate to different endpoints
 
-### `npm run build`
+### PostMVP EXAMPLE
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Add links on a page to go to a specific planet
+- Ability to search for a specific planet
+- Include orbits of planets other than Earth
+- Include size of Earth as well as Jupiter (depending on exoplanet size)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## React Component Hierarchy
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+App > Header
+App > NavBar
+App > Home
+App > RandomPlanet
+App > RandomPlanet > OrbitStats
+App > RandomPlanet > PlanetStats
+App > RandomPlanet > StarStats
+App > About
+Loading
 
-### `npm run eject`
+### State Components
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Component | Description | 
+| --- | :---: | 
+| App | Renders the entire page |
+| RandomPlanet | Renders the stats container grid, along with the planet name and the random button |
+| OrbitStats | Renders and draws the orbits canvas and information |
+| PlanetStats | Renders and draws the planets canvas |
+| StarsStats | Renders and draws the orbits canvas |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Functional Components
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Component | Description | 
+| --- | :---: | 
+| Header | Renders the header |
+| NavBar | Renders the nav and its links |
+| Home | Renders the app description |
+| About | Renders the api description |
+| Loading | Renders a loading message |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-=======
-# exoplanet-app
