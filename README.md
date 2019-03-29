@@ -48,4 +48,11 @@ Loading
 
 ### Functional Components
 
+| Component | Description | 
+| --- | :---: | 
+| Header | Renders the header |
+| NavBar | Renders the nav and its links |
+| Home | Renders the app description |
+| About | Renders the api description |
+| Loading | Renders a loading message |
 

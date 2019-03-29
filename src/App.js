@@ -22,7 +22,6 @@ class App extends Component {
       .then(data => this.setState({planetData: data}))
       .then(() => {
         this.setState({isLoaded: true})
-        console.log(this.state.planetData)
       })
   }
 
